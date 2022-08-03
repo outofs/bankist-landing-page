@@ -380,7 +380,7 @@ h4 {
   position: relative;
 
   /* IN THE END */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .slide {
@@ -664,6 +664,7 @@ h4 {
 /* COOKIE MESSAGE */
 .cookie-message {
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
@@ -671,4 +672,5 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+  bottom: 0;
 }
