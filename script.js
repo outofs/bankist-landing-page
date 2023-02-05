@@ -38,44 +38,9 @@ document.addEventListener('keydown', function (e) {
 // /// Button Scrolling
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
-
-/// Cookie message
 const header = document.querySelector('.header');
-const message = document.createElement('div');
-// console.log(message);
-message.style.width = '100%';
-message.classList.add('cookie-message');
-// // message.textContent = 'We use cookies for improved functionality and analytics';
-message.innerHTML =
-  'We use cookies for improved functionality and analytics <button class="btn btn--close--cookie"> Got it! </button>';
-header.append(message); // inserting message in HTML up on the first element
-// // header.append(message); // inserting message in HTML down on the last element
-// // // but message can exist only in one plece, because te DOM elements are uniqe
-// // // but we cam make a copy
-// // header.append(message.cloneNode(true));
-
-// // // also there are
-// header.before(message);
-// // header.after(message);
-
-// // /// Delete element
-document
-  .querySelector('.btn--close--cookie')
-  .addEventListener('click', function (e) {
-    e.preventDefault();
-    message.remove();
-  });
 
 /// Page Navigation
-// document.querySelectorAll('.nav__link').forEach(link =>
-//   link.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     // console.log('link');
-//     const id = this.getAttribute('href');
-//     console.log(id);
-//     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-//   })
-// );
 
 /// Event Delegation
 // 1. Add event listener to common parent element
